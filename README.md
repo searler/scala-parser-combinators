@@ -3,6 +3,9 @@ scala-parser-combinators [<img src="https://api.travis-ci.org/scala/scala-parser
 
 ### Scala Standard Parser Combinator Library
 
+
+__Modified to improve performance for specific use case and eliminate memory leak__
+
 As of Scala 2.11, this library is a separate jar that can be omitted from Scala projects that do not use Parser Combinators.
 
 ## Documentation
