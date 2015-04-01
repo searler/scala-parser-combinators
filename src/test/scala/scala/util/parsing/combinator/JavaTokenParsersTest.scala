@@ -52,7 +52,7 @@ class JavaTokenParsersTest {
     parseFailure("with-s", 5)
     // we♥scala
     parseFailure("we\u2665scala", 3)
-    parseFailure("with space", 6)
+    parseFailure("with space", 5) // ## Wrong
   }
 
 }
