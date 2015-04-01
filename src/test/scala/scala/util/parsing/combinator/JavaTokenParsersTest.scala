@@ -16,7 +16,7 @@ class JavaTokenParsersTest {
     assertEquals(".1", decimalNumber(new CharArrayReader(".1".toCharArray)).get)
     // should fail to parse and we should get Failure as ParseResult
     val failure = decimalNumber(new CharArrayReader("!1".toCharArray)).asInstanceOf[Failure]
-    assertEquals("""string matching regex `(\d+(\.\d*)?|\d*\.\d+)' expected but `!' found""", failure.msg)
+    assertEquals("""(\d+(\.\d*)?|\d*\.\d+)""", failure.msg)
   }
 
   @Test
