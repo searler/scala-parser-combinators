@@ -26,6 +26,6 @@ aaab
   def test(): Unit = {
     val tstParsers = new TestParsers
     val s = new CharSequenceReader("aaab")
-    assertEquals(expected, tstParsers.p(s).toString)
+    assertEquals(expected.replaceAll("\\r",""), tstParsers.p(s).toString)
   }
 }
